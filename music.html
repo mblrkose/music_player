@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Music Player</title>
+    <link rel="stylesheet" href="music.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- <a href="../home.html">
+        <img src="../images.png" alt="Logo" class="logo">
+    </a> -->
+    <div class="music-player">
+        <div class="player-controls">
+            <div class="song-info">
+                <div class="song-title">No song playing</div>
+                <div class="artist-name">-</div>
+            </div>
+
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+                <div class="time-info">
+                    <span class="current-time">0:00</span>
+                    <span class="duration">0:00</span>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button class="shuffle-btn" title="Shuffle"><i class="fas fa-random"></i></button>
+                <button class="prev-btn"><i class="fas fa-backward"></i></button>
+                <button class="rewind-btn" title="Rewind 10s"><i class="fas fa-backward-step"></i></button>
+                <button class="play-btn"><i class="fas fa-play"></i></button>
+                <button class="forward-btn" title="Forward 10s"><i class="fas fa-forward-step"></i></button>
+                <button class="next-btn"><i class="fas fa-forward"></i></button>
+                <div class="volume-control">
+                    <i class="fas fa-volume-up"></i>
+                    <input type="range" class="volume-slider" min="0" max="100" value="100">
+                </div>
+            </div>
+        </div>
+
+        <div class="playlist">
+            <div class="playlist-header">
+                <h3>Playlist</h3>
+                <div class="playlist-controls">
+                    <div class="search-container">
+                        <input type="text" id="searchInput" placeholder="Search songs...">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+            </div>
+            <ul id="playlistItems"></ul>
+        </div>
+    </div>
+    <!-- <div class="signature">Mustafa Köse</div> -->
+    <script src="music.js"></script>
+</body>
+
+</html>
